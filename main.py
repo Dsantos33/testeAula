@@ -1,15 +1,15 @@
 import requests
 
-reqUrl = "https://api.github.com/octocat&quot;
+reqUrl= "https://api.github.com/octocat"
 
-headersList = {
- "Accept": "application/vnd.github+json",
- "User-Agent": "Thunder Client (https://www.thunderclient.com)&quot;,
- "X-GitHub-Api-Version": "2022-11-28"
+headerList = {
+    "accept":"application/vnd.github+json",
+    "User-Agent":"Thunder Client (https://www.thunderclient.com)",
+    "X-GitHub-Api-Version":"2022-11-28"
 }
 
 payload = ""
 
-response = requests.request("GET", reqUrl, data=payload,  headers=headersList)
+response= requests.request("GET",reqUrl,data=payload,headers=headerList)
 
 print(response.text)
